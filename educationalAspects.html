@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <div class="educationAspects_content">
+        <div class="drawCircles">
+            <div class="top_circles">
+                <div class="empty_border_circle">
+                    <div class="grey_circle_1"></div>
+                    <!-- <div class="grey_circle_2"></div> -->
+                </div>
+                <div class="grey_circle_2"></div>
+            </div>
+            <div>
+                <div class="grey_circle_3"></div>
+                <div class="line_45deg"></div>
+            </div>
+        </div>
+        <div class="pink_small_circle"></div>
+        <div class="textOnCircle">
+            <p class="aspect_heading">
+                The 3 most crutial aspects<br />
+                of education in today’s world.
+            </p>
+            <p class="aspect_text">We call them the 3 E’s - Exams, Exploration and Expertise</p>
+        </div>
+        <div class="empty_square"></div>
+        <!-- <div class="crucialAspects_content">
+            <a class="exam_aspects">
+                <div class="aspects_icon">
+                    <img src="../../assets/images/3D_assets/Exams.png" alt="">
+                </div>
+                <div>
+                    <h4>Exams</h4>
+                </div>
+                <div>
+                    <p>Acing exams to build confidence, and reach short and long term goals.</p>
+                </div>
+            </a>
+            <a class="explore_aspects">
+                <div class="aspects_icon">
+                    <img src="../../assets/images/3D_assets/Explore_search.png" alt="">
+                </div>
+                <div>
+                    <h4>Explore</h4>
+                </div>
+                <div>
+                    <p>Exploration of personalised content to gain exposure.</p>
+                </div>
+            </a>
+            <a class="expertise_aspects">
+                <div class="aspects_icon">
+                    <img src="../../assets/images/3D_assets/Expertise.png" alt="">
+                </div>
+                <div>
+                    <h4>Expertise</h4>
+                </div>
+                <div>
+                    <p>Expertize in 21st century skills such as coding, finance, problem solving, verbal ability, etc.
+                    </p>
+                </div>
+            </a>
+        </div> -->
+        <!-- <div class="educationAspects-slider"> -->
+        <div class="slider_arrows eduAspSlider_arrows ">
+            <a class="prev" href="#">
+                <img src="../../assets/images/ICONS/left-arrow.svg" alt="">
+            </a>
+            <a class="next" href="#">
+                <img src="../../assets/images/ICONS/right-arrow.svg" alt="">
+            </a>
+        </div>
+        <!-- </div> -->
+        <div class="crucialAspects_content">
+            <div class="slider-outer">
+                <div class="educationAspects-slider">
+                    <div class="slide">
+
+                        <a class="exam_aspects">
+                            <div class="aspects_icon">
+                                <img src="../../assets/images/3D_assets/Exams.png" alt="">
+                            </div>
+                            <div>
+                                <h4>Exams</h4>
+                            </div>
+                            <div>
+                                <p>Acing exams to build confidence, and reach short and long term goals.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="slide">
+                        <a class="explore_aspects">
+                            <div class="aspects_icon">
+                                <img src="../../assets/images/3D_assets/Explore_search.png" alt="">
+                            </div>
+                            <div>
+                                <h4>Explore</h4>
+                            </div>
+                            <div>
+                                <p>Exploration of personalised content to gain exposure.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="slide">
+                        <a class="expertise_aspects">
+                            <div class="aspects_icon">
+                                <img src="../../assets/images/3D_assets/Expertise.png" alt="">
+                            </div>
+                            <div>
+                                <h4>Expertise</h4>
+                            </div>
+                            <div>
+                                <p>Expertize in 21st century skills such as coding, finance, problem solving, verbal
+                                    ability, etc.
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- <div class="slides-numbers" style="display: block;color: white;">
+                    <span class="active">01</span> / <span class="total"></span>
+                </div> -->
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+    <script>
+
+        var eduAspSlider = $('.educationAspects-slider');
+        $('.prev').click(function () {
+            eduAspSlider.slick('slickPrev');
+            return false;
+        });
+
+        $('.next').click(function () {
+            eduAspSlider.slick('slickNext');
+            return false;
+        });
+
+        eduAspSlider.slick({
+            infinite: true,
+            dots: false,
+            arrows: false,
+            // fade: true,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            fadeSpeed: 1000,
+            // asNavFor: '.slide',
+            // dots: true,
+            // dotsClass: 'custom_paging text-warning',
+            // customPaging: function (slider, i) {
+            //     return (i + 1) + '/' + slider.slideCount;
+            // },
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 1,
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+
+                    }
+
+                }
+            ],
+
+        });
+        
+    </script>
+
+</body>
+
+</html>

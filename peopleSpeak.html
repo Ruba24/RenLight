@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <div class="peopleSpeak_content">
+        <div class="peopleSpeak_heading">
+            <h2>
+                What people have to say about us.
+            </h2>
+        </div>
+        <div class="peopleSpeak_slider_content ">
+            <div class="slider-outer">
+                <div class="peoplespeak-slider">
+                    <div class="slide">
+                        <div class="peoplespeak_card">
+                            <div class="card_content">
+                                <div class="media_thumbnail">
+                                    <img src="../../assets/images/bolt-thumnail.jpeg" alt="bolt-app">
+                                </div>
+                                <a class="play-icon">
+                                    <img src="../../assets/images/play-white-icon.svg" alt="play-white-icon">
+                                </a>
+                                <div class="people-info">
+                                    <div class="profile_img">
+                                        <img src="../../assets/images/user-profile.svg" alt="">
+                                    </div>
+                                    <h4>Jayda Barton</h4>
+                                    <p>Product Manager at Project 511</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <div class="peoplespeak_card">
+                            <div class="card_content">
+                                <div class=" media_thumbnail text-msg">
+                                    <p>
+                                        “ BOLT keeps things simple, the best apps of the year I've ever used. I’ sure
+                                        that the upcoming updates will be more complete..”
+                                    </p>
+                                    <!-- <img src="../../assets/images/bolt-thumnail.jpeg" alt="bolt-app"> -->
+                                </div>
+                                <div class="people-info">
+                                    <div class="profile_img">
+                                        <img src="../../assets/images/google-profile.svg" alt="">
+                                    </div>
+                                    <h4>Jedidiah Cassin</h4>
+                                    <p>via. Google Play</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <div class="peoplespeak_card">
+                            <div class="card_content">
+                                <div class="media_thumbnail">
+                                    <img src="../../assets/images/whatsappmsg.jpeg" alt="bolt-app">
+                                </div>
+                                <div class="people-info">
+                                    <div class="profile_img">
+                                        <img src="../../assets/images/whatsapp-profile.svg" alt="">
+                                    </div>
+                                    <h4>Fae Schumm</h4>
+                                    <p>via. Apple Store</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <div class="peoplespeak_card">
+                            <div class="card_content">
+                                <div class="media_thumbnail">
+                                    <img src="../../assets/images/bolt-thumnail.jpeg" alt="bolt-app">
+                                </div>
+                                <a class="play-icon">
+                                    <img src="../../assets/images/play-white-icon.svg" alt="play-white-icon">
+                                </a>
+                                <div class="people-info">
+                                    <div class="profile_img">
+                                        <img src="../../assets/images/user-profile.svg" alt="">
+                                    </div>
+                                    <h4>Jayda Barton</h4>
+                                    <p>Product Manager at Project 511</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="peoplespeak_slider_arrows">
+            <a class="arrowPrev" href="#">
+                <img src="../../assets/images/arrows/arrow-left.svg">
+            </a>
+            <a class="arrowNext" href="#">
+                <img src="../../assets/images/arrows/arrow-right.svg" alt="">
+            </a>
+        </div>
+
+
+        <script>
+            var peopleslider = $('.peoplespeak-slider');
+            $('.arrowPrev').click(function () {
+                peopleslider.slick('slickPrev');
+                return false;
+            });
+
+            $('.arrowNext').click(function () {
+                peopleslider.slick('slickNext');
+                return false;
+            });
+
+            peopleslider.slick({
+                infinite: true,
+                dots: false,
+                arrows: false,
+                // fade: true,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                fadeSpeed: 1000,
+            });
+        </script>
+</body>
+
+</html>

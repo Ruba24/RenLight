@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <div class="boltServices_content slider_content">
+        <div>
+            <div class="boltService_heading heading">
+                <h2>
+                    <span style="font-weight: 800;">BOLT</span> Services
+                </h2>
+            </div>
+            <div class="service_slider_arrows">
+                <a class="service-prev" href="#">
+                    <img src="../../assets/images/ICONS/left-arrow.svg" alt="">
+                </a>
+                <a class="service-next" href="#">
+                    <img src="../../assets/images/ICONS/right-arrow.svg" alt="">
+                </a>
+            </div>
+            <div class="service_slider_content ">
+                <div class="slider-outer">
+                    <div class="boltService-slider">
+                        <div class="slide">
+                            <div class="card bolt_app_card">
+                                <div class="card_content">
+                                    <div class="circle_icon app_circle">
+                                        <img src="../../assets/images/ICONS/bolt-app.svg" alt="bolt-app">
+                                    </div>
+                                    <div class="card_heading_text">
+                                        <h2>BOLT App</h2>
+                                        <p>Using the Component Builder with your projects.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/152229/slider-img-1.jpg" /> -->
+                        </div>
+
+                        <div class="slide">
+                            <div class="card bolt_mentor_card">
+                                <div class="card_content">
+                                    <div class="circle_icon mentor_circle">
+                                        <img src="../../assets/images/ICONS/bolt-mentor.svg" alt="bolt-mentor">
+                                    </div>
+                                    <div class="card_heading_text">
+                                        <h2>BOLT Mentor</h2>
+                                        <p>Using the Component Builder with your projects.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/152229/slider-img-2.jpg" /> -->
+                        </div>
+
+                        <div class="slide">
+                            <div class="card bolt_class_card">
+                                <div class="card_content">
+                                    <div class="circle_icon class_circle">
+                                        <img src="../../assets/images/ICONS/bolt-class-laptop.svg" alt="bolt-class-laptop">
+                                    </div>
+                                    <div class="card_heading_text">
+                                        <h2>BOLT Class</h2>
+                                        <p>Using the Component Builder with your projects.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/152229/slider-img-3.jpg" /> -->
+                        </div>
+
+                        <div class="slide">
+                            <div class="card bolt_reward_card">
+                                <div class="card_content">
+                                    <div class="circle_icon reward_circle">
+                                        <img src="../../assets/images/ICONS/bolt-mentor.svg"
+                                            alt="bolt-mentor">
+                                    </div>
+                                    <div class="card_heading_text">
+                                        <h2>BOLT Rewards</h2>
+                                        <p>Using the Component Builder with your projects.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="slide">
+                            <div class="card bolt_reward_card">
+                                <div class="card_content">
+                                    <div class="circle_icon reward_circle">
+                                        <img src="../../assets/images/ICONS/bolt-class-laptop.svg"
+                                            alt="bolt-class-laptop">
+
+                                    </div>
+                                    <div class="card_heading_text">
+                                        <h2>BOLT Rewards</h2>
+                                        <p>Using the Component Builder with your projects.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="slide">
+                            <div class="card bolt_reward_card">
+                                <div class="card_content">
+                                    <div class="circle_icon reward_circle">
+                                        <img src="../../assets/images/ICONS/bolt-app.svg" alt="bolt-app">
+                                    </div>
+                                    <div class="card_heading_text">
+                                        <h2>BOLT Rewards</h2>
+                                        <p>Using the Component Builder with your projects.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var serviceSlider = $('.boltService-slider');
+        $('.service-prev').click(function () {
+            serviceSlider.slick('slickPrev');
+            return false;
+        });
+
+        $('.service-next').click(function () {
+            serviceSlider.slick('slickNext');
+            return false;
+        });
+
+        serviceSlider.slick({
+            infinite: true,
+            dots: false,
+            arrows: false,
+            // fade: true,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            fadeSpeed: 1000,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 1,
+                    }
+                },
+                {
+                    breakpoint: 667,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+
+                    }
+
+                }
+            ],
+
+
+        });
+    </script>
+
+</body>
+
+</html>

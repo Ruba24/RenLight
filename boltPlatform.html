@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <div class="boltPlatform_content slider_content" id="platform">
+        <div>
+            <div class="boltService_heading heading">
+                <h2>
+                    <span style="font-weight: 800;"> BOLT </span> Platform
+                </h2>
+            </div>
+            <div class="platform_slider_arrows slider_arrows">
+                <a class=" prev" href="#">
+                    <img src="../../assets/images/ICONS/left-arrow.svg" alt="">
+                </a>
+                <a class=" next" href="#">
+                    <img src="../../assets/images/ICONS/right-arrow.svg" alt="">
+                </a>
+            </div>
+            <div class="platform_slider_content ">
+                <div class="slider-outer">
+                    <div class="slider platform-slider">
+                        <div class="slide">
+                            <div class="card generalContent_card">
+                                <div class="card_content">
+                                    <div class="generalContent_card_img card_img">
+                                        <img src="../../assets/images/day-homepage.svg" alt="day-homepage">
+                                    </div>
+                                    <div class="card_heading_text">
+                                        <h2>General Content</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="slide">
+                            <div class="card homepath_card">
+                                <div class="card_content">
+                                    <div class="homepath_card_img card_img">
+                                        <img src="../../assets/images/night-homepage.svg" alt="night-homepage">
+                                    </div>
+                                    <div class="card_heading_text">
+                                        <h2>Home Path</h2>
+                                    </div>
+                                </div>
+                            </div>     
+                        </div>
+                        <div class="slide">
+                            <div class="card generalContent_card">
+                                <div class="card_content">
+                                    <div class="generalContent_card_img card_img">
+                                        <img src="../../assets/images/day-homepage.svg" alt="day-homepage">
+                                    </div>
+                                    <div class="card_heading_text">
+                                        <h2>General Content</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="slide">
+                            <div class="card homepath_card">
+                                <div class="card_content">
+                                    <div class="homepath_card_img card_img">
+                                        <img src="../../assets/images/night-homepage.svg" alt="night-homepage">
+                                    </div>
+                                    <div class="card_heading_text">
+                                        <h2>Home Path</h2>
+                                    </div>
+                                </div>
+                            </div>     
+                        </div>
+                        <div class="slide">
+                            <div class="card generalContent_card">
+                                <div class="card_content">
+                                    <div class="generalContent_card_img card_img">
+                                        <img src="../../assets/images/day-homepage.svg" alt="day-homepage">
+                                    </div>
+                                    <div class="card_heading_text">
+                                        <h2>General Content</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="slide">
+                            <div class="card homepath_card">
+                                <div class="card_content">
+                                    <div class="homepath_card_img card_img">
+                                        <img src="../../assets/images/night-homepage.svg" alt="night-homepage">
+                                    </div>
+                                    <div class="card_heading_text">
+                                        <h2>Home Path</h2>
+                                    </div>
+                                </div>
+                            </div>     
+                        </div>
+                        <div class="slide">
+                            <div class="card generalContent_card">
+                                <div class="card_content">
+                                    <div class="generalContent_card_img card_img">
+                                        <img src="../../assets/images/day-homepage.svg" alt="day-homepage">
+                                    </div>
+                                    <div class="card_heading_text">
+                                        <h2>General Content</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="slide">
+                            <div class="card homepath_card">
+                                <div class="card_content">
+                                    <div class="homepath_card_img card_img">
+                                        <img src="../../assets/images/night-homepage.svg" alt="night-homepage">
+                                    </div>
+                                    <div class="card_heading_text">
+                                        <h2>Home Path</h2>
+                                    </div>
+                                </div>
+                            </div>     
+                        </div>
+
+                       
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+
+        var platformSlider = $('.platform-slider');
+        $('.prev').click(function () {
+            platformSlider.slick('slickPrev');
+            return false;
+        });
+
+        $('.next').click(function () {
+            platformSlider.slick('slickNext');
+            return false;
+        });
+
+        platformSlider.slick({
+            infinite: true,
+            dots: false,
+            arrows: false,
+            // fade: true,
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            fadeSpeed: 1000,
+        });
+    </script>
+</body>
+
+</html>

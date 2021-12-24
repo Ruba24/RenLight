@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <div class="contactUs_content">
+        <div class="contact_area">
+            <div class="left_content col-sm-12 col-md-6">
+                <div class="global_contact_img">
+                    <img src="../../assets/images/3D_assets/3d_global_contact.png" alt="3d_global_contact">
+                </div>
+            </div>
+            <div class="right_content ">
+                <div class="form_content">
+                    <div class="form_title">
+                        <h2>
+                            Contact Us
+                        </h2>
+                        <p>We are here to help you.</p>
+                    </div>
+                    <form onsubmit="return(validate());" action="www.bolt.education" method="GET" name="contactForm"
+                        target="_blank">
+                        <div class="row">
+                            <div class="form-group col">
+                                <label for="exampleInputEmail1" id="fullName">Your name</label>
+                                <input type="text" class="form-control" name="fullName" placeholder="Full name" required
+                                    pattern="[Aa-Zz]">
+                                <!-- <small id="fullName" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col">
+                                <label for="inputPhoneNumber">Your phone number</label>
+                                <span class="country-code">+91
+                                </span>
+                                <input type="phone" class="form-control phone_input" name="phoneNumber"
+                                    placeholder="Phone Number" class="phone_input"
+                                    pattern="^((\+91[7-9]{1}[0-9]{10})|([7-9]{1}[0-9]{10}))$" maxlength="13"
+                                    title="Phone number with 7-9 and remaing 9 digit with 0-9" id="phoneNumber"
+                                    placeholder="Phone number" required max="10">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col">
+                                <label for="messageTextarea">Your message</label>
+                                <textarea class="form-control" id="messageTextarea" rows="3"></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <button type="submit" class="btn submit_btn">Submit</button>
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const phoneInputField = document.querySelector("#number");
+        const phoneInput = window.intlTelInput(phoneInputField, {
+            utilsScript:
+                "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+        });
+        $("#number").intlTelInput();
+
+        function validate() {
+
+            if (document.contactForm.fullName.value == "") {
+                alert("Please provide your full name!");
+                document.contactForm.fullName.focus();
+                return false;
+            }
+            if (document.contactForm.phoneNumber.value == "") {
+                alert("Please provide your phone number!");
+                document.contactForm.phoneNumber.focus();
+                return false;
+            }
+
+            // const phoneNum = document.getElementById("phoneNumber");
+
+            // email.addEventListener("input", function (event) {
+            //     if (phoneNum.validity.type) {
+            //         phoneNum.setCustomValidity("I am expecting an phone number!");
+            //     } else {
+            //         email.setCustomValidity("");
+            //     }
+            // });
+            // if (document.myForm.phoneNumber.value == "" || isNaN(document.myForm.phoneNumber.value) ||
+            //     document.myForm.phoneNumber.value.length != 10) {
+
+            //     alert("Please provide a zip in the format +91 44.");
+            //     document.myForm.phoneNumber.focus();
+            //     return false;
+            // }
+
+            // return (true);
+        }
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <div class="dashboard_view" id="home">
+        <div class="d_left_content">
+            <div class="h_p_e">
+                <p>Hyper
+                    <span class="horizontal_line" style="color:#186AF4;font-weight: 600;display: inline;">
+                        __
+                    </span>
+                </p>
+                <p>Personalized</p>
+                <p>Education <span class="square-dot">.</span>
+                </p>
+
+            </div>
+            <div class="desc_about_Bolt animated slideInUp">
+                <p><span style="font-weight: 600;">BOLT</span> is available for classes 6-12 providing services
+                    like exams, 70 careers, and necessary
+                    new-age skills using live classes, apps, & a strong mentorship.<img
+                        src="../../assets/images/ICONS/raising-hands_1f64c.png" class="ml-2" width="20"></p>
+            </div>
+            <div class="register_area">
+                <div>
+                    <span>Register now to get 1 month free!</span>
+                </div>
+                <form action="www.bolt.education" method="POST" onsubmit="return(validate());" name="regForm"
+                    id="regForm">
+                    <div class="inline-block register_content">
+                        <i class="fa fa-phone"></i>
+                        <span class="country-code">+91
+                            <!-- <i class="fa fa-angle-down"> -->
+
+                            </i></span>
+                        <input type="tel" name="phone_number" placeholder="Phone Number" class="phone_input"
+                            pattern="^((\+91[7-9]{1}[0-9]{10})|([7-9]{1}[0-9]{10}))$" maxlength="13"
+                            title="Phone number with 7-9 and remaing 9 digit with 0-9" id="number">
+
+                        <button type="submit" class="btn btn-primary get_started">Get
+                            started</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="d_right_content mt-4">
+            <div class="white_bubble_bg">
+                <img src="../../assets/images/white_bubble_bg.png">
+            </div>
+            <div class="BlueCircle"></div>
+            <div class="desktop_image">
+                <img src="../../assets/images/3D_assets/Desktop_assets.png">
+            </div>
+            <div class="largeYellowCircle"></div>
+        </div>
+    </div>
+
+
+    <script>
+        function validate() {
+            if (document.regForm.number.value == "") {
+                alert("Please provide your phone number!");
+                document.regForm.number.focus();
+                return false;
+            }
+            // pattern="[7-9]{1}[0-9]{9}" 
+            const phoneInputField = document.querySelector("#number");
+            const phoneInput = window.intlTelInput(phoneInputField, {
+                utilsScript:
+                    "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+            });
+            $("#number").intlTelInput();
+
+        }
+    </script>
+</body>
+        
+</html>
+        
